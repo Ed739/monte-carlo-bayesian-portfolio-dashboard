@@ -1,0 +1,8 @@
+id: 3df1ca44-ac31-4f69-8bed-aeb7ca3c6370
+cwd: c:\Users\edmon\.copilot\chats\3df1ca44-ac31-4f69-8bed-aeb7ca3c6370
+client_name: vscode-agent-host
+name: "You are an expert quantitative developer and data visualisation engineer. Build an interactive web dashboard that estimates the expected 3‑month return and risk of a custom multi‑fund portfolio using Bayesian‑informed priors and Monte Carlo simulation. The dashboard must allow the user to choose any funds on the spot and must use Yahoo Finance via the yfinance Python library as the primary free data source for fund price history.\r\n\r\nContext\r\n\r\nInvestor horizon: 3 months\r\n\r\nConstraint: total port..."
+user_named: false
+summary_count: 0
+created_at: 2026-08-17T16:10:16.620Z
+updated_at: 2026-08-18T05:27:29.768Z

@@ -44,7 +44,8 @@ streamlit run `app.py`
 
 5. Outcome — Vend = V0(1 + r). Reports mean, median, 5th percentile, P(in target range), P(loss), and ±5 pp allocation sensitivity.
 
-## Key assumptions: Normal returns, zero inter-fund correlation, square-root-of-time scaling, single-period compounding, static parameters. Suitable for scenario comparison, not precise probability estimates.
+## Key assumptions:
+Normal returns, zero inter-fund correlation, square-root-of-time scaling, single-period compounding, static parameters. Suitable for scenario comparison, not precise probability estimates.
 
 ## Limitations
 

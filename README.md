@@ -34,14 +34,17 @@ streamlit run `app.py`
 ```
 
 ## Methodology
+1. Bayesian blend — Each fund's prior (μ, σ) and historical estimate (μ, σ) are combined via a precision-weighted Normal–Normal update. The lower-variance input dominates. If disabled, the prior is used as-is.
 
-The dashboard:
+2. Horizon scaling — 3-month inputs are projected to H months: mean scales linearly (× H/3), SD scales by √(H/3).
 
-1. Combines prior and historical return assumptions.
-2. Adjusts returns and risk for the selected investment horizon.
-3. Generates simulated fund returns.
-4. Combines fund returns using portfolio weights.
-5. Calculates the distribution of possible ending values.
+3. Monte Carlo — N independent Normal draws per fund (uncorrelated across funds).
+
+4. Portfolio return — Weighted sum of fund returns, allocations normalised to 100 %.
+
+5. Outcome — Vend = V0(1 + r). Reports mean, median, 5th percentile, P(in target range), P(loss), and ±5 pp allocation sensitivity.
+
+## Key assumptions: Normal returns, zero inter-fund correlation, square-root-of-time scaling, single-period compounding, static parameters. Suitable for scenario comparison, not precise probability estimates.
 
 ## Limitations
 
